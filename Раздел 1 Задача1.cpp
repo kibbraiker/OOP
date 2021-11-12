@@ -33,18 +33,15 @@ public:
 	
 	void openDoor()
 	{
-		
 		if (doorIsOpen)
 		{
 			cout << "Дверь уже открыта!\n\n";
 			return;
 		}
 
-	
 		if (codeIsSeted)
 			enterCode();
 
-		
 		if (!codeIsSeted)
 		{
 			doorIsOpen = true;
@@ -55,7 +52,6 @@ public:
 	
 	void closeDoor()
 	{
-		
 		if (!doorIsOpen)
 		{
 			cout << "Дверь уже закрыта!\n\n";
@@ -69,7 +65,6 @@ public:
 	
 	void setCode()
 	{
-		
 		if (doorIsOpen)
 		{
 			cout << "Невозможно установить код, так как дверь открыта!\n\n";
